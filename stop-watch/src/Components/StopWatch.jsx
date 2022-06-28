@@ -16,7 +16,8 @@ export const StopWatch = () => {
 
   return (
     <div>
-      <h3>Stop Watch:{counter}</h3>
+      <h1>Stop Watch</h1>
+      <h3>{counter}</h3>
       <button
         onClick={() => {
           clearInterval(ref.current);
@@ -26,10 +27,14 @@ export const StopWatch = () => {
         Stop
       </button>
       <button onClick={startTimer}>Start</button>
-      <button onClick={() =>{
+      <button
+        onClick={() => {
           clearInterval(ref.current);
           setCounter(0);
-      }}>Reset</button>
+        }}
+      >
+        Reset
+      </button>
     </div>
   );
 };
