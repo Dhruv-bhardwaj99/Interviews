@@ -21,7 +21,7 @@ export const Search = () => {
   const handleChange = (e) => {
     // const searchWord = e.target.value;
     const final = bag.filter((res) => {
-        console.log(res.title.toLowerCase().includes(store.toLowerCase()))
+        // console.log(res.title.toLowerCase().includes(store.toLowerCase()))
         return res.title.toLowerCase().includes(store.toLowerCase());
       });
     setFilter(final);
@@ -39,7 +39,7 @@ export const Search = () => {
       />
       <button onClick={handleChange}>Filter</button>
 
-      {setStore.length !== 0 ? (
+      {store.length !== 0 ? (
         <div>
           <div className="titleName">
             {filter.map((e) => (
