@@ -85,8 +85,6 @@ const getUniquePrducts = (array) => {
 }
 
 
-
-
 let ans = getUniquePrducts(listOfProducts);
 
 console.log(ans);
