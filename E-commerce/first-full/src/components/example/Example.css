@@ -1,0 +1,15 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 8px;
+}
+
+.details{
+    border: 1px solid burlywood;
+}
+
+.imgCards{
+    width: 100%;
+    height: 300px;
+}
