@@ -31,7 +31,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.post("", async (req, res) => {
+router.post("/order", async (req, res) => {
   try {
     const Product = await item.findOne({ code: req.body.code });
 
@@ -49,7 +49,7 @@ router.post("", async (req, res) => {
   }
 });
 
-router.get("/summarize", async (req, res) => {
+router.get("/order/summarize", async (req, res) => {
   try {
     const useCart = await Cart.find().lean().exec();
 
